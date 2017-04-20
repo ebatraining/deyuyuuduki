@@ -1,0 +1,96 @@
+.access_float{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3%;
+  overflow:hidden;
+}
+.ac_right{
+  width:70%;
+  float:right;
+}
+.ac_left{
+  width:30%;
+  float:right;
+}
+.map{
+  display:block;
+  margin-left:auto;
+  width:100%;
+}
+.ac_content2,.ac_content3{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3%;
+}
+.ac_text1{
+  line-height:2em;
+}
+.ac_textbox2,.ac_textbox3{
+  width:90%;
+  margin-left:10%;
+}
+.ac1,.ac2{
+  width:300px;
+  margin-left:5%;
+}
+/*-----------------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+.ac_logo{
+  display:none;
+}
+.ac_text1{
+  font-size:2vw;
+  line-height: 1em;
+}
+.ac_text1 br{
+  display:none;
+}
+
+.ac_right{
+  width:90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  float:none;
+  margin-top5%;
+}
+.ac_right {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+width:90%;
+display:block;
+margin-left:auto;
+margin-right:auto;
+float:none;
+}
+
+.ac_right iframe,
+.ac_right object,
+.ac_right embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.ac_left{
+  width:90%;
+  float:none;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+}
+.ac_text2,.ac_text3{
+  font-size:2vw;
+}
+.ac1,.ac2{
+  width:40vw;
+}
+}

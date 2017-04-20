@@ -1,0 +1,132 @@
+.onsentopin{
+  max-width:1000px;
+  overflow:hidden;
+  margin-left:auto;
+  margin-right:auto;
+}
+.gensen{
+  width:60%;
+  float:left;
+}
+.onsentop_right{
+  float:right;
+  width:37%;
+  padding-right:1%;
+  padding-left:2%;
+}
+.onsentext1{
+  width:250px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3%;
+}
+.onsen_p1{
+  line-height:2em;
+  margin-top:6%;
+}
+.onsen_p2{
+  line-height:2em;
+}
+
+.onsenfloat{
+  margin-top:4%;
+  max-width:1000px;
+  overflow:hidden;
+  margin-left:auto;
+  margin-right:auto;
+}
+.kazokuburo{
+  width:50%;
+  float:right;
+}
+.onsenfloatleft{
+  width:48%;
+  float:left;
+}
+.onsentext2{
+  width:200px;
+}
+.maru_aka{
+  width:300px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3%;
+}
+.onsentext3{
+  width:400px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.onsen_p3{
+  text-align:center;
+  line-height:2em;
+}
+/*-----------------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+.gensen{
+  width:90%;
+  float:none;
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+}
+.onsentop_right{
+  float:none;
+  width:90%;
+  padding-right:2%;
+  padding-left:2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.onsentext1{
+  width:35vw;
+}
+.onsen_p1{
+  font-size:2vw;
+}
+.kazokuburo{
+  width:90%;
+  float:none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.onsenfloatleft{
+  width:90%;
+  float:none;
+  padding-left:2%;
+  padding-right:2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.onsentext2{
+  width:35vw;
+  display:block;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top:3%;
+}
+.onsen_p2{
+  font-size:2vw;
+}
+.maru_aka{
+  width:25vw;
+}
+.onsentext3{
+  width:50vw;
+}
+.onsen_p3{
+  text-align:left;
+  font-size:2vw;
+  padding-left:3%;
+  padding-right:3%;
+  }
+.onsen_p3 br{
+  display:none;
+}
+}

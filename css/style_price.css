@@ -1,0 +1,170 @@
+.moriback{
+  background-image: url(../img/price/price_mori.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width:800px;
+  min-height: 385px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:-3%;
+}
+.p_textbox{
+  width: 58%;
+  margin-left: auto;
+  padding-right: 8%;
+  padding-top: 5%;
+}
+
+ul.asterisk li {
+  list-style-type: none;
+  text-indent: -1em;
+  letter-spacing: 1px;
+  color: #969696;
+  padding-left:10%;
+  font-size:15px;
+}
+ul.asterisk li:before {
+  display: inline;
+  content: "※";
+}
+.price_p1{
+  padding-left:14%;
+  color:#969696;
+  margin-bottom:-2%;
+}
+.price_p2{
+  padding-left:14%;
+  color:#969696;
+  margin-bottom:-2%;
+  font-size: 14px;
+}
+.price1{
+  width:70%;
+  padding-top:11%;
+}
+.price2{
+  width:70%;
+  padding-top:3%;
+  padding-bottom:1%;
+}
+.soraback{
+  background-image: url(../img/price/price_sora.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width:800px;
+  min-height: 385px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:-3%;
+}
+.kazeback{
+  background-image: url(../img/price/price_kaze.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width:800px;
+  min-height: 385px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.ougi{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:80px;
+  margin-top:5%;
+}
+.pricemidashi{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:250px;
+  margin-top:3%;
+}
+.p_textbox2{
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:4%;
+}
+.miniprice{
+  display:none;
+}
+.price_p3{
+  padding-left:5%;
+  padding-right:5%;
+}
+/*-----------------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+.moriback{
+  background-image: none;
+  background-color:#fff;
+  max-width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  min-height:100px;
+  padding-bottom:2%;
+  }
+.soraback{
+  background-image: none;
+  background-color:#fff;
+  max-width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  min-height:100px;
+  padding-bottom:2%;
+  }
+.kazeback{
+  background-image: none;
+  background-color:#fff;
+  max-width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  min-height:100px;
+  padding-bottom:2%;
+  margin-bottom:5%;
+  }
+.miniprice{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:45%;
+}
+.p_textbox{
+  width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+  padding-right: 2%;
+  padding-top: 2%;
+}
+.price1{
+  width:70%;
+  padding-top:5%;
+  margin-left:5%;
+}
+.price2{
+  width:70%;
+  padding-top:5%;
+  margin-left:5%;
+}
+.price_p1{
+  font-size:2vw;
+}
+.price_p2{
+  font-size:2vw;
+}
+ul.asterisk li {
+  font-size:2vw;
+}
+.ougi{
+  width:10vw;
+}
+.pricemidashi{
+  width:30vw;
+}
+.price_p3{
+  font-size: 3vw;
+}
+
+}

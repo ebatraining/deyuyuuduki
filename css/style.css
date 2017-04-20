@@ -1,0 +1,125 @@
+html,body{
+      height:100%;
+}
+
+body {
+  font-family: 'Helvetica','Arial', "游ゴシック体", 'Yu Gothic', "YuGothic",
+   'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro',
+  "メイリオ","Meiryo", "Osaka", 'ＭＳ Ｐゴシック', 'MS PGothic', "sans-serif";
+  margin-right: auto;
+  margin-left : auto;
+}
+img {
+  border-style:none;
+}
+body * p{
+  letter-spacing: 1px;
+  color: #444;
+  line-height: 2em;
+}
+
+.header{
+  width:100%;
+  overflow:hidden;
+  margin-left:auto;
+  margin-right:auto;
+}
+.logo{
+  width:15%;
+  float:left;
+  margin-left:10%;
+  margin-top:3%;
+}
+.headerimg{
+  float:right;
+  width:70%;
+}
+
+.menuback{
+  width:100%;
+  background: url(../img/back/umekamon.jpg) ;
+  margin-top:0;
+  background-repeat: repeat;
+ }
+ul.menu{
+  max-width: 98%;
+  margin-bottom: 0;
+  margin-top:0;
+}
+ul.menu li{
+  width:15%;
+  border:1px; solid red;
+  display: inline-block;
+  /display:inline;/*IE7*/
+  /zoom:1;/*IE7*/
+}
+
+.menu_inner{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.menuoheya,.menuonsen,.menuryouri,.menuprice,.menuaccess,.menutoiawase{
+  width:95%;
+  margin-top:2%;
+  margin-bottom:0;
+}
+
+.top{
+  width:100%;
+  background: url("../img/back/washi.png") ;
+  padding-bottom:1%;
+  padding-top: 1%;
+  border:0;
+}
+strong.bold{
+  font-weight: bold;
+}
+.fotter_top{
+margin-top:5%;
+}
+
+.footer_p1{
+  text-align:center;
+  margin-top: 0;
+  font-size:15px;
+  line-height: 2em;
+}
+.footer_p2{
+  text-align:center;
+  font-size:10px;
+  color:#969696;
+
+}
+.fotter_bottom{
+  width:100%;
+  background-image: url(../img/back/umekamon.jpg);
+  padding-top:1px;
+  padding-bottom:2px;
+}
+
+  ul.menu{
+    padding-left:3%;
+    }
+  h1{
+    color:#444;
+    text-align:center;
+    font-size:20px;
+    }
+/*---------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+
+  h1{
+    font-size:2vw;
+  }
+  .footer_p1{
+    font-size:1vw;
+  }
+  .footer_p2{
+    font-size:1vw;
+  }
+
+}

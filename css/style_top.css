@@ -1,0 +1,117 @@
+.topimg{
+  display:block;
+  max-width:98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents1,.contents2{
+  width:100%;
+  padding-top:20px;
+}
+.maru_kyuusu,.maru_room{
+  display:block;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5%;
+}
+.kakurezato,.omotenashi{
+  display:block;
+  width:350px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.top_p1{
+  text-align:center;
+  font-size:15px;
+  margin-top:1%;
+}
+.top_p2{
+  font-size:15px;
+  float:left;
+  width:39%;
+  margin-left:3%;
+  margin-right:3%;
+  margin-top:0;
+}
+.top_p3{
+  font-size:15px;
+  float:left;
+  width:42%;
+}
+.topinner{
+  margin-top:3%;
+  max-width:800px;
+  overflow:hidden;
+  margin-left:auto;
+  margin-right:auto;
+}
+.irori{
+  float:left;
+  width:55%;
+}
+.topfuro{
+  margin-left:5%;
+  float:right;
+  width:50%;
+  margin-right:3%;
+}
+strong.bold{
+  font-weight: bold;
+}
+
+/*---------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+  .maru_kyuusu,.maru_room{
+    width:20vw;
+  }
+  .kakurezato,.omotenashi{
+    width:35vw;
+  }
+
+  .top_p1{
+    font-size:2vw;
+    text-align: left;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .top_p1 br{
+    display:none;
+  }
+  .top_p2{
+    font-size:2vw;
+    float:none;
+    width:90%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .top_p3{
+    font-size:2vw;
+    float:none;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.irori{
+    float:none;
+    width:90%;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+.topfuro{
+  float:none;
+  width:90%;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  }
+}

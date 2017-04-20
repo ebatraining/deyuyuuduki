@@ -1,0 +1,41 @@
+.toi_float{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:1%;
+  overflow: hidden;
+}
+
+.toi_left{
+  width:40%;
+  float:left;
+}
+.ryokaniriguchi{
+  width:60%;
+  float:right;
+}
+.toi_content{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5%;
+}
+.akishitsu,.goyoyaku,.mail{
+  max-width:32%;
+  padding-left:1%;
+
+}
+/*-----------------------------*/
+/* 画面サイズが768px以下の場合に適用 */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+.ac_logo{
+  width:60%;
+}
+.toi_text1{
+  font-size:2vw;
+}
+.toi_float{
+  padding-right:1%;
+}
+}
