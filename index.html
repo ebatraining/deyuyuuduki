@@ -35,8 +35,8 @@ $(function(){
     });
 });
 </script>
-<script type="text/javascript">
-  $(function(){//スクロールするとメニューが画面上部に固定
+<script type="text/javascript">//スクロールするとメニューが画面上部に固定
+  $(function(){
     var box    = $(".menuback");
     var boxTop = box.offset().top;
     $(window).scroll(function () {
@@ -50,11 +50,16 @@ $(function(){
     });
 });
 </script>
-<script type="text/javascript">
-  $(document).ready(function() {//現在のページURLが一致していればカレント表示
-    if(location.pathname != "/") {
-        $('#gnav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-    }
+<script type="text/javascript">//現在のページURLと一致していればカレント表示
+$(function(){
+$('.menu_inner li a').each(function(){
+var $href = $(this).attr('href');
+if(location.href.match($href)) {
+$(this).addClass('active');
+} else {
+$(this).removeClass('active');
+}
+});
 });
 </script>
 </head>
