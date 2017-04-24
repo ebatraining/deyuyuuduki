@@ -35,8 +35,23 @@ $(function(){
     });
 });
 </script>
+<script type="text/javascript">//スクロールするとメニューが画面上部に固定
+  $(function(){
+    var box    = $(".menuback");
+    var boxTop = box.offset().top;
+    $(window).scroll(function () {
+        if($(window).scrollTop() >= boxTop) {
+            box.addClass("fixed");
+      $("body").css("margin-top","2%");
+        } else {
+            box.removeClass("fixed");
+      $("body").css("margin-top","0px");
+        }
+    });
+});
+</script>
 </head>
-<body>
+<body id="">
 <div class="wrapper">
   <header>
   <div class="header">
