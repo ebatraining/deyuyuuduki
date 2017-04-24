@@ -54,6 +54,10 @@ ul.menu li{
   /zoom:1;/*IE7*/
 }
 
+.active{
+  background-color: rgba(0,0,0,1);
+}
+
 .menu_inner{
   max-width:1000px;
   margin-left:auto;
@@ -65,6 +69,13 @@ ul.menu li{
   margin-top:2%;
   margin-bottom:0;
 }
+
+.fixed{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
 
 .top{
   width:100%;
