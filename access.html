@@ -50,8 +50,20 @@ $(function(){
     });
 });
 </script>
+<script type="text/javascript">//現在のページURLと一致していればカレント表示
+$(function(){
+$('.menu_inner li a').each(function(){
+var $href = $(this).attr('href');
+if(location.href.match($href)) {
+$(this).addClass('active');
+} else {
+$(this).removeClass('active');
+}
+});
+});
+</script>
 </head>
-<body id="">
+<body>
 <div class="wrapper">
   <header>
   <div class="header">
