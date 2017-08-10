@@ -1,8 +1,21 @@
+.top{
+	position:relative;
+}
 .topimg{
   display:block;
   max-width:98%;
   margin-left: auto;
   margin-right: auto;
+}
+.message{
+
+	position:absolute;
+	  max-width:98%;
+	top:1%;
+	left:1%;
+}
+#message_hide{
+		display:none;
 }
 
 .contents1,.contents2{

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="css/style_top.css" type="text/css">
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
      $('a img').hover(function(){
@@ -62,6 +62,12 @@ $(this).removeClass('active');
 });
 });
 </script>
+<script type="text/javascript">
+$(function() {
+var count = 1000;//表示までの時間（ミリ秒）
+setTimeout(function(){$("#message_hide").hide().fadeIn(500);}, count);
+});
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -87,7 +93,8 @@ $(this).removeClass('active');
   </section>
   <section>
     <div class="top">
-      <img src="img/top/topimg1.png" alt="" class="topimg">
+      <img src="img/top/topimg0.png" alt="" class="topimg">
+      <div id="message_hide"><img src="img/top/topimg_message.png" alt="" class="message"></div>
     </div>
   </section>
   <br style="clear:both">
