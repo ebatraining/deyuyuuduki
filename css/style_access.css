@@ -19,13 +19,27 @@
   width:100%;
 }
 .ac_content2,.ac_content3{
-  max-width:1000px;
+  max-width:400px;
   margin-left:auto;
   margin-right:auto;
   margin-top:3%;
+    overflow: hidden;
+}
+.ac_content2{
+    float:left;
+    margin-left:10%;
+}
+.ac_content3{
+    float:right;
+    margin-right: 10%;
 }
 .ac_text1{
-  line-height:2em;
+  line-height:4em;
+    font: 100% "ヒラギノ明朝 ProN"; 
+}
+.ac_text2,.ac_text3{
+    line-height:4em;
+    font: 100% "ヒラギノ明朝 ProN"; 
 }
 .ac_textbox2,.ac_textbox3{
   width:90%;
@@ -35,6 +49,34 @@
   width:300px;
   margin-left:5%;
 }
+footer{
+    margin-top: 50%;
+}
+.fotter_top,.footer_p1,.footer_p2{
+    line-height:4em;
+    font: 100% "ヒラギノ明朝 ProN";
+}
+a[href^="tel:"] {  
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #0865F1 0%, #55ac7a 100%);
+    border-image-slice: 1;
+  
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href^="tel:"]:hover {
+    background-color: white;
+    background: linear-gradient(to right, #0865F1, #55ac7a);
+    color: #fff;
+}
+}
+
 /*-----------------------------*/
 /* 画面サイズが768px以下の場合に適用 */
 /*----------------------------*/
@@ -56,7 +98,7 @@
   margin-left:auto;
   margin-right:auto;
   float:none;
-  margin-top5%;
+  margin-top:5%;
 }
 .ac_right {
 position: relative;

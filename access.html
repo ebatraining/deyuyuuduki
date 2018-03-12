@@ -3,7 +3,7 @@
 <head>
 <title>新潟県露天風呂付客室と貸切家族風呂の宿 五頭温泉郷 出湯温泉　旅館弓月</title>
 <meta charset="utf-8">
-<meta neme="keywords" content="新潟県,温泉,露天風呂,露天風呂付客室,貸切家族風呂,五頭温泉郷,出湯温泉,旅館,弓月,">
+<meta name="keywords" content="新潟県,温泉,露天風呂,露天風呂付客室,貸切家族風呂,五頭温泉郷,出湯温泉,旅館,弓月,">
 <meta name="description" contennt="新潟県露天風呂付客室と貸切家族風呂の宿　五頭温泉郷出湯温泉。
 お迎えするお客様は３組まで。　お泊りいただくお部屋は温泉１００％の露天風呂付です。">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/style_access.css" type="text/css">
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <script type="text/javascript">
 $(function(){
      $('a img').hover(function(){
@@ -62,6 +63,221 @@ $(this).removeClass('active');
 });
 });
 </script>
+<!--script>
+window.onload=function(){
+    var styles=[
+        {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+    ];
+     var options = {
+  mapTypeControlOptions: {
+    mapTypeIds: ['Styled']
+  },
+    center: new google.maps.LatLng(37.8195559, 139.3004391),
+    zoom: 13,
+    disableDefaultUI: true, 
+    mapTypeId: 'Styled'
+  };
+  var div = document.getElementById('map');
+  var map = new google.maps.Map(div, options);
+  var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+  map.mapTypes.set('Styled', styledMapType);
+};   
+</script-->
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+  #map {
+    height: 400px;
+    background-color: gray;
+  }
+      /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<script>
+    function initMap(){
+        var styledMapType = new google.maps.StyledMapType(
+            [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ],
+            {name: 'Styled Map'});
+        var map = new google.maps.Map(document.getElementById('map'),{
+        center: {lat: 37.8195559, lng: 139.3004391},
+        zoom:13,
+        mapTypeControlOptions:{
+            mapTypeIds:['roadmap', 'satellite', 'hybrid', 'terrain',
+            'styled_map']
+        }
+        });
+        var image = './img/access/icon.png';
+        var marker = new google.maps.Marker({
+          position: {lat: 37.8195559, lng: 139.3004391},
+          map: map,
+          icon: image
+        });
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLJNaI8Bh16dewM_zY7Ap2tXnU7F37KeQ&callback=initMap"
+async defer></script>
 </head>
 <body>
 <div class="wrapper">
@@ -89,9 +305,10 @@ $(this).removeClass('active');
     <div class="top">
       <div class="access_float">
         <div class="ac_right">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71292.36237862355!2d139.26456877838837!3d37.84374337844563!2m3!1f0!2f0!
+          <div id="map"></div>
+          <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71292.36237862355!2d139.26456877838837!3d37.84374337844563!2m3!1f0!2f0!
           3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4d477974280b9%3A0xd7b7f3494b0e38fe!2z44CSOTU5LTE5MjYg5paw5r2f55yM6Zi_6LOA6YeO5biC5Ye65rmv77yX77
-          yW77yR!5e0!3m2!1sja!2sjp!4v1473924420314" width="550" height="400" frameborder="0" class="map" style="border:0" allowfullscreen></iframe>
+          yW77yR!5e0!3m2!1sja!2sjp!4v1473924420314" width="550" height="400" frameborder="0" class="map" style="border:0" allowfullscreen></iframe-->
        </div>
        <div class="ac_left">
          <img src="img/top/yuudukilogo.png" alt="旅館　弓月" class="ac_logo">
@@ -99,7 +316,7 @@ $(this).removeClass('active');
            <i class="fa fa-map-marker" aria-hidden="true"></i>959-1926<br>
            新潟県阿賀野市出湯温泉761番地</p>
          <p class="ac_text1">
-           <i class="fa fa-phone" aria-hidden="true"></i> 0250-62-3665<br>
+           <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0250-62-3665">0250-62-3665</a><br><br>
            <i class="fa fa-fax" aria-hidden="true"></i> 0250-62-3665</p>
       </div>
       </div>
@@ -108,14 +325,14 @@ $(this).removeClass('active');
   </section>
   <section>
     <div class="ac_content2">
-      <img src="img/access/ac1.png" alt="お車でお越しのお客さま" class="ac1">
+      <img src="./img/access/kuruma.png" alt="お車でお越しのお客さま" class="ac1">
       <div class="ac_textbox2">
         <p class="ac_text2">
           県外からお越しの場合<br>
-          磐越自動車道　安田　Ｉ･Ｃ　より国道２９０号線を新発田方面へ１０分<br>
+          磐越自動車道　安田　Ｉ･Ｃ　より国道２９０号線を<br>新発田方面へ１０分<br>
           <br>
           秋田，山形方面からお越しの場合<br>
-          国道７号線 → 新発田市市内に入り新発田駅前より国道２９０号線を五泉方面へ２０分<br>
+          国道７号線 → 新発田市市内に入り新発田駅前より国道２９０号線を<br>五泉方面へ２０分<br>
           <br>
           新潟市よりお越しの場合<br>
           国道４９号線→水原町→瓢湖前の県道を直進１０分<br>
@@ -123,12 +340,15 @@ $(this).removeClass('active');
       </div>
     </div>
     <div class="ac_content3">
-      <img src="img/access/ac2.png" alt="JR列車をご利用のお客さま" class="ac2">
+      <img src="./img/access/densya.png" alt="JR列車をご利用のお客さま" class="ac2">
       <div class="ac_textbox3">
         <p class="ac_text3">
           五頭温泉郷･出湯温泉の最寄の駅はＪＲ水原駅です。<br>
+            <br>
           水原駅または水原駅前新潟交通旅行センターより阿賀野市営バスが出ています。<br>
+            <br>
           五頭温泉郷行きを御利用ください。<br>
+            <br>
           出湯温泉バス停下車（乗車時刻約２０分）より徒歩１分（１００円）<br>
         </p>
       </div>
@@ -141,8 +361,8 @@ $(this).removeClass('active');
       </h1>
       <p class="footer_p1">
         <i class="fa fa-map-marker" aria-hidden="true"></i>959-1926<br>
-        新潟県阿賀野市出湯温泉761番地<br>
-        <i class="fa fa-phone" aria-hidden="true"></i> 0250-62-3665<br>
+        新潟県阿賀野市出湯温泉761番地<br><br>
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0250-62-3665">0250-62-3665</a><br>
       </p>
     </div>
     <div class="fotter_bottom">
