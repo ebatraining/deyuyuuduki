@@ -27,32 +27,38 @@ html, body {
     height: 400px;
     background-color: gray;
 }
-.ac_content2,.ac_content3{
-  max-width:400px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:3%;
-    overflow: hidden;
+
+#access_images{
+	max-width:1000px;
+	margin:0 auto;
+	overflow: hidden
 }
+
+.ac_content2,.ac_content3{
+  width:45%;
+  margin-top:5%;
+}
+
 .ac_content2 img,.ac_content3 img{
     width:100%;
     overflow: hidden;
 }
+
 .ac_content2{
     float:left;
-    margin-left:10%;
 }
+
 .ac_content3{
     float:right;
-    margin-right: 10%;
 }
+
 .ac_text1{
   line-height:4em;
     font: 100% "ヒラギノ明朝 ProN"; 
 }
 
 footer{
-    margin-top: 60%;
+    margin-top:10%;
 }
 .fotter_top,.footer_p1,.footer_p2{
     line-height:4em;
